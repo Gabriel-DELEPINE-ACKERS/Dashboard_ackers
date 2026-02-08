@@ -328,9 +328,12 @@
         class="sidebar fixed inset-y-0 right-0 w-72 md:relative md:left-0 md:right-auto md:w-64 flex flex-col p-6 translate-x-full md:translate-x-0">
         <div class="flex items-center justify-between mb-10 px-2">
             <div class="flex items-center gap-3">
-                <div class="bg-blue-600 p-2 rounded-lg"><i data-lucide="layout-dashboard"
-                        class="text-white w-6 h-6"></i></div>
-                <span class="text-xl font-bold tracking-tight">Dashboard</span>
+                <div class="rounded-lg w-10 h-10 flex items-center justify-center overflow-hidden"
+                    style="background-color: #164387;">
+                    <img id="dashboard-logo" src="logo_G_sans_fond.png" alt="Dashboard"
+                        class="w-full h-full object-cover">
+                </div>
+                <span class="text-2xl font-bold tracking-tight">Dashboard</span>
             </div>
             <button onclick="toggleSidebar()" class="md:hidden text-slate-400 p-2"><i data-lucide="x"></i></button>
         </div>
@@ -356,12 +359,51 @@
         </nav>
 
         <div class="mt-auto pt-6 border-t border-slate-800/50">
-            <div class="bg-slate-900/50 p-3 rounded-xl border border-slate-800/50">
+            <div class="bg-slate-900/50 p-3 rounded-xl border border-slate-800/50 mb-4">
                 <p class="text-[9px] font-bold tracking-[0.15em] uppercase text-slate-500 mb-1">Créateur</p>
                 <div class="flex items-center gap-2">
                     <span
                         class="flex h-2 w-2 rounded-full bg-blue-400 shadow-[0_0_8px_rgba(96,165,250,0.8)] online-dot"></span>
                     <p class="text-sm font-semibold text-blue-400">Gabriel Ackers</p>
+                </div>
+            </div>
+            <div class="bg-slate-900/50 p-3 rounded-xl border border-slate-800/50">
+                <p class="text-[9px] font-bold tracking-[0.15em] uppercase text-slate-500 mb-3">Contactez moi !</p>
+                <div class="flex gap-2">
+                    <a href="https://www.linkedin.com/in/gabriel-de-l%C3%A9pine-ackers-357b35398/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex-1 p-2 rounded-lg bg-slate-800/50 hover:bg-blue-900/50 border border-slate-700 hover:border-blue-500 transition-colors flex items-center justify-center"
+                        title="LinkedIn">
+                        <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.845 0-9.767h3.554v1.383c.43-.664 1.199-1.609 2.925-1.609 2.135 0 3.735 1.39 3.735 4.38v5.613zM5.337 8.855c-1.144 0-1.915-.762-1.915-1.715 0-.955.77-1.715 1.921-1.715 1.147 0 1.918.759 1.942 1.715 0 .953-.795 1.715-1.948 1.715zm1.581 11.597H3.771V9.504h3.147v10.948zM22.224 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.224 0z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Gabriel-DELEPINE-ACKERS" target="_blank" rel="noopener noreferrer"
+                        class="flex-1 p-2 rounded-lg bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700 hover:border-slate-600 transition-colors flex items-center justify-center"
+                        title="GitHub">
+                        <svg class="w-4 h-4 text-slate-300" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://gricad-gitlab.univ-grenoble-alpes.fr/deleping" target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex-1 p-2 rounded-lg bg-slate-800/50 hover:bg-orange-900/50 border border-slate-700 hover:border-orange-600 transition-colors flex items-center justify-center"
+                        title="GitLab">
+                        <svg class="w-4 h-4 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23.955 13.587l-1.342-4.135-2.664-8.184a.755.755 0 0 0-.714-.469.747.747 0 0 0-.714.469l-2.664 8.184-1.277 3.928H8.595l-1.277-3.928L4.654 1.268a.747.747 0 0 0-.714-.469.755.755 0 0 0-.714.469L.562 9.452.049 10.775a1.148 1.148 0 0 0 .416 1.284l11.764 8.551 11.763-8.551a1.146 1.146 0 0 0 .417-1.284" />
+                        </svg>
+                    </a>
+                    <a href="mailto:gabriel.delepine.ackers@gmail.com"
+                        class="flex-1 p-2 rounded-lg bg-slate-800/50 hover:bg-red-900/50 border border-slate-700 hover:border-red-600 transition-colors flex items-center justify-center"
+                        title="Email">
+                        <svg class="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
